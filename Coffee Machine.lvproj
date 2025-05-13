@@ -13,10 +13,11 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Modules" Type="Folder">
+			<Property Name="NI.SortType" Type="Int">3</Property>
+			<Item Name="Model.lvlib" Type="Library" URL="../Libraries/Model/Model.lvlib"/>
 			<Item Name="Add Material.lvlib" Type="Library" URL="../Libraries/Add Material/Add Material.lvlib"/>
 			<Item Name="Coffee Maker.lvlib" Type="Library" URL="../Libraries/Coffee Maker/Coffee Maker.lvlib"/>
 			<Item Name="Coffee Prefers.lvlib" Type="Library" URL="../Libraries/Coffee Prefers/Coffee Prefers.lvlib"/>
-			<Item Name="Model.lvlib" Type="Library" URL="../Libraries/Model/Model.lvlib"/>
 			<Item Name="Status.lvlib" Type="Library" URL="../Libraries/Status/Status.lvlib"/>
 			<Item Name="Tank.lvlib" Type="Library" URL="../Libraries/Tank/Tank.lvlib"/>
 		</Item>
@@ -28,6 +29,7 @@
 			<Item Name="Test Status API.vi" Type="VI" URL="../Libraries/Status/Test Status API.vi"/>
 			<Item Name="Test Tank API.vi" Type="VI" URL="../Libraries/Tank/Test Tank API.vi"/>
 		</Item>
+		<Item Name="Material broadcast -- cluster.ctl" Type="VI" URL="../Material broadcast -- cluster.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Acquire Semaphore.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Acquire Semaphore.vi"/>
